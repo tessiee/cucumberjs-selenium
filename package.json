@@ -1,0 +1,20 @@
+{
+  "name": "cucjs",
+  "version": "1.0.0",
+  "description": "cucumber js selenium framework",
+  "author": "tessie",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.1.0",
+    "chromedriver": "^111.0.0",
+    "cucumber": "^6.0.7",
+    "selenium-webdriver": "^4.8.2"
+  },
+  "scripts": {
+    "test": "cucumber-js features/*/*.feature",
+    "regression-test": "cucumber-js --tags @regression",
+    "development-test": "cucumber-js --tags @development",
+    "first-feature-test": "cucumber-js features/01_firstFeature/*.feature",
+    "second-feature-test": "cucumber-js features/02_secondFeature/*.feature"
+  }
+}
