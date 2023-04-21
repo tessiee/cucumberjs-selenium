@@ -29,7 +29,7 @@ When(/^I enter '(.*)' into the field '(.*)'/, async function (text, inputField) 
   await this.driver.findElement(By.id(fieldSelector)).sendKeys(text);
 });
 
-When(/^In the field '(.*)' I search for '(.*)'/, async function (field, searchTerm) {
+When(/^I search for '(.*)' in the field '(.*)'/, async function (searchTerm, field) {
   let fieldSelector;
   switch (field) {
     case 'originalLanguage':

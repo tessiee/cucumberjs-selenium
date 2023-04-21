@@ -1,7 +1,7 @@
 @regression
 Feature: Google search
 
-  Description: Testcases that test the Google search function
+  Description: Google search functionality
 
   Background: Navigating to Google
     Given I visit the url 'https://google.com/'
